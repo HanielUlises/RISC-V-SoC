@@ -16,3 +16,8 @@ variable:
     .word 0xdeadbeef
 variable2:
     .word 0x12341234
+
+/* Declared but not initialized */
+.bss
+un_init_var:
+    .word 0x00
