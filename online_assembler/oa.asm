@@ -10,3 +10,9 @@ _boot:
 
     la x6, variable
     addi x6, x6, 4
+
+.data 
+variable:
+    .word 0xdeadbeef
+variable2:
+    .word 0x12341234
