@@ -14,7 +14,7 @@ module top (
 
 
   Memory #(
-      .MEM_FILE("/home/mnasser431998/Desktop/Udemy/picoSoC/firmware/code.hex"),
+      .MEM_FILE("picoRV32/firmware/code.hex"),
       .SIZE(1024)
   ) D_mem_unit (
       .clk(clk),
