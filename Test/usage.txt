@@ -1,0 +1,27 @@
+// Original behavior (32-bit XOR, no enable)
+my_design #(
+    .WIDTH(32),
+    .USE_ADD_MODE(0)
+) xor_inst (
+    .clk       (clk),
+    .reset_n   (reset_n),
+    .enable    (1'b1),           // always enabled
+    .d_in_1    (d_in_1),
+    .d_in_2    (d_in_2),
+    .d_out     (d_out),
+    .valid_out (/* open */)
+);
+
+// 64-bit adder version
+my_design #(
+    .WIDTH(64),
+    .USE_ADD_MODE(1)
+) add_inst (
+    .clk       (clk),
+    .reset_n   (reset_n),
+    .enable    (enable),
+    .d_in_1    (a_64),
+    .d_in_2    (b_64),
+    .d_out     (sum_64),
+    .valid_out (sum_valid)
+);
