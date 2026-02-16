@@ -1,3 +1,5 @@
 *.elf
 *.map
 *.o
+*.bin
+*.hex
